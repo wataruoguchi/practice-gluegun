@@ -53,6 +53,6 @@ module.exports = {
     }
 
     // Success! We have movie info. Print it out on the screen
-    print.debug(movie)
+    print.table(Object.entries(movie), {format: 'markdown'})
   }
 }
